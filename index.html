@@ -31,8 +31,8 @@
     <title>The Drum Beat</title>
 
     <style>
-      section {
-        padding: 60px 0;
+      section#intro {
+        padding-top: 60px;
       }
     </style>
   </head>
@@ -75,7 +75,7 @@
 
     <!-- showcase -->
 
-    <section id="intro">
+    <section id="intro" class="mb-4 mb-md-0">
       <div class="container-lg">
         <!-- row -->
         <div class="row justify-content-center align-content-center">
@@ -100,14 +100,14 @@
 
     <!-- pricing -->
 
-    <section id="pricing" class="bg-lght">
+    <section id="pricing" class="bg-info p-5">
       <div class="container-lg">
         <div class="text-center">
           <h2>Pricing Plans</h2>
-          <p class="lead text-muted">Pick a price plan that works for you.</p>
+          <p class="lead text-muted">Pick a price plan that works for you</p>
         </div>
 
-        <div class="row justify-content-center align-content-center g-4">
+        <div class="row justify-content-center align-content-center g-4 my-2">
           <!-- COL-1 -->
           <div class="col-md-5">
             <div class="card border-2 border-primary">
@@ -118,14 +118,21 @@
                 <h4 class="card-title">Hard Copy</h4>
                 <p class="lead card-subtitle">Lorem ipsum dolor sit amet</p>
                 <p class="display-4 my-4 text-primary fw-bold">
-                  GH<span>&#8373;</span> 2.99
+                  GH<span>&#8373;</span> 30
                 </p>
                 <p class="card-text mx-5 text-muted d-none d-lg-block">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
-                <a href="#" class="btn btn-outline-primary btn-lg mt-3">
-                  Buy Now</a
+
+                <!-- Button trigger modal -->
+                <a
+                  role="button"
+                  class="btn btn-outline-primary btn-lg mt-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 >
+                  Buy Now
+                </a>
               </div>
             </div>
           </div>
@@ -143,9 +150,378 @@
                 <p class="card-text mx-5 text-muted d-none d-lg-block">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
-                <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+                <a
+                  href="https://www.amazon.com/books-used-books-textbooks/b?ie=UTF8&node=283155"
+                  class="btn btn-outline-primary btn-lg mt-3"
+                  target="_blank"
+                >
                   <i class="fab fa-amazon"></i> Buy Now</a
                 >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal---------------------- -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- modal header -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Order Details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- modal body -->
+          <div class="modal-body">
+            <form action=""></form>
+
+            <!-- field-1-->
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="name"
+                placeholder=""
+                required="required"
+              />
+            </div>
+
+            <!-- filed-2 -->
+            <div class="mb-3">
+              <label for="quantity" class="form-label">Quantity:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="quantity"
+                placeholder=""
+              />
+            </div>
+
+            <!-- filed-3 -->
+            <div class="mb-3">
+              <label for="phone-number" class="form-label">Phone Number:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="phone-number"
+                placeholder="e.g +233-500025847"
+              />
+            </div>
+
+            <!-- filed-4 -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="e.g adams@gmail.com"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- topics at a glance -->
+    <section id="topics" class="p-5">
+      <div class="container-md">
+        <div class="text-center">
+          <h2>What To Expect</h2>
+          <p class="lead text-muted">
+            A quick rundown of the topics you'll be enjoying
+          </p>
+        </div>
+
+        <!-- row  -->
+
+        <!-- col-1 -->
+        <div class="row my-2 g-5 justify-content-around align-items-center">
+          <!-- on very very small screen size take 6 widths of the 12 withs -->
+          <div class="col-6 col-lg-4">
+            <img class="img-fluid w-75" src="img/book.png" alt="" srcset="" />
+          </div>
+
+          <!-- on very very small screen take the full width (12 width) of the screen -->
+          <div class="col-lg-6">
+            <!-- accordion -->
+            <div class="accordion" id="chapters">
+              <!-- item-1 -->
+              <div class="accordion-item">
+                <!-- header -->
+                <h2 class="accordion-header" id="heading-1">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-1"
+                  >
+                    <i class="fas fa-bookmark"></i>
+                    <span class="ms-2">Chapter 1-</span>
+                  </button>
+                </h2>
+
+                <!-- body -->
+                <div
+                  id="chapter-1"
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="heading-1"
+                  data-bs-parent="#chapters"
+                >
+                  <!-- actual-content goes here -->
+
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis, dignissimos! Ex placeat voluptas incidunt
+                      ducimus! Perspiciatis nobis qui, labore atque doloremque
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis, dignissimos! Ex placeat voluptas incidunt
+                      ducimus! Perspiciatis nobis qui, labore atque doloremque
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item-2 -->
+
+              <div class="accordion-item">
+                <!-- header -->
+                <h2 class="accordion-header" id="heading-2">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-2"
+                  >
+                    <i class="fas fa-bookmark"></i>
+                    <span class="ms-2">Chapter 2-</span>
+                  </button>
+                </h2>
+
+                <!-- body -->
+                <div
+                  id="chapter-2"
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-2"
+                  data-bs-parent="#chapters"
+                >
+                  <!-- actual-content goes here -->
+
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis, dignissimos! Ex placeat voluptas incidunt
+                      ducimus! Perspiciatis nobis qui, labore atque doloremque
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis, dignissimos! Ex placeat voluptas incidunt
+                      ducimus! Perspiciatis nobis qui, labore atque doloremque
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item-3 -->
+              <div class="accordion-item">
+                <!-- header -->
+                <h2 class="accordion-header" id="heading-3">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-3"
+                  >
+                    <i class="fas fa-bookmark"></i>
+                    <span class="ms-2">Chapter 3-</span>
+                  </button>
+                </h2>
+
+                <!-- body -->
+                <div
+                  id="chapter-3"
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-3"
+                  data-bs-parent="#chapters"
+                >
+                  <!-- actual-content goes here -->
+
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis, dignissimos! Ex placeat voluptas incidunt
+                      ducimus! Perspiciatis nobis qui, labore atque doloremque
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis, dignissimos! Ex placeat voluptas incidunt
+                      ducimus! Perspiciatis nobis qui, labore atque doloremque
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item-4 -->
+              <div class="accordion-item">
+                <!-- header -->
+                <h2 class="accordion-header" id="heading-4">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-4"
+                  >
+                    <i class="fas fa-bookmark"></i>
+                    <span class="ms-2">Chapter 4-</span>
+                  </button>
+                </h2>
+
+                <!-- body -->
+                <div
+                  id="chapter-4"
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-4"
+                  data-bs-parent="#chapters"
+                >
+                  <!-- actual-content goes here -->
+
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis, dignissimos! Ex placeat voluptas incidunt
+                      ducimus! Perspiciatis nobis qui, labore atque doloremque
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis, dignissimos! Ex placeat voluptas incidunt
+                      ducimus! Perspiciatis nobis qui, labore atque doloremque
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- item-5 -->
+              <div class="accordion-item">
+                <!-- header -->
+                <h2 class="accordion-header" id="heading-5">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-5"
+                  >
+                    <i class="fas fa-bookmark"></i>
+                    <span class="ms-2">Chapter 5-</span>
+                  </button>
+                </h2>
+
+                <!-- body -->
+                <div
+                  id="chapter-5"
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-5"
+                  data-bs-parent="#chapters"
+                >
+                  <!-- actual-content goes here -->
+
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis, dignissimos! Ex placeat voluptas incidunt
+                      ducimus! Perspiciatis nobis qui, labore atque doloremque
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis, dignissimos! Ex placeat voluptas incidunt
+                      ducimus! Perspiciatis nobis qui, labore atque doloremque
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review -->
+    <!-- reviews list -->
+    <section id="reviews" class="bg-info p-5">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2><i class="bi bi-stars text-altdark"></i> Book Reviews</h2>
+          <p class="lead">What my Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="row justify-content-center my-5">
+          <!-- for very small screens its going to be full width -->
+          <div class="col-lg-8">
+            <div class="list-group">
+              <!-- list-1 -->
+              <div class="list-group-item py-3">
+                <h5 class="mb-1">Lorem ipsum dolor sit amet.</h5>
+                <p class="mb-1">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione tempora atque deserunt pariatur dicta repellat
+                    asperiores quos adipisci sapiente labore deleniti nemo
+                    consequuntur est mollitia.
+                  </p>
+                  <small></small>
+                    Review by<br />
+                   Benard Makafui Mordedzi <br />
+                   Author; The Devil In Me
+
+                  </small>
+                  
+
+              </div>
+
+              <!-- list-2 -->
+              <div class="list-group-item py-3">
+                <h5 class="mb-1">Lorem ipsum dolor sit amet.</h5>
+                <p class="mb-1">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione tempora atque deserunt pariatur dicta repellat
+                  asperiores quos adipisci sapiente labore deleniti nemo
+                  consequuntur est mollitia.
+                </p>
+                <small></small>
+                  Review by<br />
+                  Mr. Samuel Y. Amebley <br />
+                  University of Ghana School of Law <br />
+                  The Administrator
+                </small>
               </div>
             </div>
           </div>
