@@ -34,6 +34,10 @@
       section#intro {
         padding-top: 60px;
       }
+      #more-1,
+      #more-2 {
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -61,7 +65,7 @@
             <a class="nav-link" aria-current="page" href="#topics"
               >About The Book</a
             >
-            <a class="nav-link" href="#review">Reviews</a>
+            <a class="nav-link" href="#reviews">Reviews</a>
             <a class="nav-link" href="#contact">Get in Touch</a>
             <a
               class="nav-link btn btn-dark text-white ms-2 d-none d-md-inline"
@@ -490,45 +494,122 @@
             <div class="list-group">
               <!-- list-1 -->
               <div class="list-group-item py-3">
-                <h5 class="mb-1">Lorem ipsum dolor sit amet.</h5>
-                <p class="mb-1">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ratione tempora atque deserunt pariatur dicta repellat
-                    asperiores quos adipisci sapiente labore deleniti nemo
-                    consequuntur est mollitia.
-                  </p>
-                  <small></small>
-                    Review by<br />
-                   Benard Makafui Mordedzi <br />
-                   Author; The Devil In Me
+                <h5 class="mb-1">Lorem ipsum dolor sit amet</h5>
+                <p class="mb-2 lh-lg">
+                  If you have ever felt the need to motivate yourself, encourage
+                  yourself or perhaps sharpen your self-esteem, there is only
+                  <span id="dots-1">...</span>
+                  <span id="more-1">
+                    few books I will recommend in that regard, and ‘Drum Beat’
+                    is definitely on that list. This book does not only bring
+                    out the beauty of literature but equally goes a long way to
+                    add value to the reader. Thus, in as much as you get
+                    entertained reading this amazing book, you will equally get
+                    to learn a lot about life, how to tackle the daily struggles
+                    it comes with and getting motivated to be more than just
+                    ordinary. The choice of words, the imagery and the effective
+                    use of simile and metaphor brings the poems to life and
+                    makes it extremely relatable. I am convinced that this book;
+                    the ‘Drum Beat’ is the birth of a new face of the African
+                    poetry. Where everyone can appreciate literature and poems
+                    without worry about relating and understanding core themes
+                    and subject matter of the poems. I have read and appreciated
+                    a lot of African poetry and I must state without an iota of
+                    doubt that this book counts among the best. It follows
+                    Chinua Achebe’s admonishment to always use literature to
+                    touch on some key important ills or social canker in the
+                    continent of Africa. You can decide to ignore the literary
+                    devices, you can purposely overlook the play with words
+                    among others but one thing you cannot ignore is the issues
+                    that the various poems seek to address. Initially, I thought
+                    I was reading for the fun of it but I was caught thinking
+                    about the essential themes raised by the poet and it wasn’t
+                    long before I took them to work. It was amazing how quickly
+                    the work had an effect on my life but I realized that was
+                    how amazing the book is. AB is an amazing personality with a
+                    blessed hand that makes the pen write for generational
+                    readers and leaders. I have read every page of this book and
+                    without reservation, I will endorse this book for every
+                    reader especially those who seek to find their path in life
+                    and encourage themselves while they are at it.</span
+                  >
+                </p>
+                <!-- button to trigger read more/less -->
+                <button
+                  class="btn btn-primary btn-md mb-2"
+                  onclick="myFunctionA()"
+                  id="myBtn-1"
+                >
+                  Read more
+                </button>
 
+                <!-- reviewer -->
+                <div>
+                  <small>
+                    Review by Benard Makafui Mordedzi <br />
+                    Author; The Devil In Me
                   </small>
-                  
-
+                </div>
               </div>
 
               <!-- list-2 -->
               <div class="list-group-item py-3">
-                <h5 class="mb-1">Lorem ipsum dolor sit amet.</h5>
-                <p class="mb-1">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Ratione tempora atque deserunt pariatur dicta repellat
-                  asperiores quos adipisci sapiente labore deleniti nemo
-                  consequuntur est mollitia.
+                <h5 class="mb-1">Lorem ipsum dolor sit amet</h5>
+                <p class="mb-2 lh-lg">
+                  It is heartwarming to observe that the blooming of new writers
+                  has gradually taken shape. These include works such as
+                  <span id="dots-2">...</span>
+                  <span id="more-2">
+                    Kwame Wright, Philip Boakye Dua Oyinka popularly known as
+                    Nana Asaase and Abraham A. Anab. His concise but incisive
+                    short collection of poems entitled “The Drum Beat”
+                    symbolizes an appeal to the youth to take action for a
+                    better future. The Drum Beat is set in simple but flowery
+                    language which is intrinsically woven to drive home virtues
+                    such as diligence, perseverance, belief in God and the
+                    can-do spirit. Though the collection is divided into four
+                    broad areas of educational/motivational, politics, faith and
+                    religion as well as love and life, each piece seems to have
+                    pieces of these meshed into one another to have the required
+                    effect. The Drum Beat symbolizes talents, sound, light and a
+                    call for action. In terms of style, Anab’s collection makes
+                    use of allusion, symbolism and extended metaphors and
+                    similes to gain the needed effect. He equally creates
+                    parallels among the poems which echo the same idea in a
+                    different and subtle manner. The poems come in various
+                    lengths including Pleasure which is a two-line poem. The
+                    Drum Beat is an invitation for Ghanaians of all walk of
+                    life, including the youth to take advantage of their talents
+                    to contribute to national development. It recognizes the
+                    need to convert initial challenges and failures to stepping
+                    stones on the path to progress.
+                  </span>
                 </p>
-                <small></small>
-                  Review by<br />
-                  Mr. Samuel Y. Amebley <br />
-                  University of Ghana School of Law <br />
-                  The Administrator
-                </small>
+
+                <!-- button to trigger read more/less -->
+                <button
+                  class="btn btn-primary btn-md mb-2"
+                  onclick="myFunctionB()"
+                  id="myBtn-2"
+                >
+                  Read more
+                </button>
+
+                <!-- reviewer -->
+                <div>
+                  <small>
+                    Review by Mr. Samuel Y. Amebley <br />
+                    University of Ghana School of Law <br />
+                    The Administrator
+                  </small>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
+    <p></p>
     <!-- bootstrap js -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -540,5 +621,39 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      function myFunctionA() {
+        var dots = document.getElementById("dots-1");
+        var moreText = document.getElementById("more-1");
+        var btnText = document.getElementById("myBtn-1");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+
+      function myFunctionB() {
+        var dots = document.getElementById("dots-2");
+        var moreText = document.getElementById("more-2");
+        var btnText = document.getElementById("myBtn-2");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
   </body>
 </html>
