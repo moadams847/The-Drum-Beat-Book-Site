@@ -87,11 +87,24 @@
           <div class="col-md-5 text-center text-md-start">
             <h2 class="display-2">The Drum Beat Book</h2>
             <p class="lead my-4 text-muted">
-              This work of art are words that are refreshingly placating and
-              provides individuals with relief from stress and pressure as well
-              as a form of ministration to the reader
+              This work of art is not just about how the author insightfully
+              reveals his talent in the space of writing but they are words that
+              are interesting, refreshingly placating and provides individuals
+              with relief from stress and pressure as well as a form of
+              ministration to the reader
             </p>
             <a class="btn btn-dark btn-lg" href="#pricing">Buy Now</a>
+
+            <!-- Tricker to offcanvas -->
+            <a
+              class="d-block mt-3"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasExample"
+              role="button"
+              aria-controls="offcanvasExample"
+            >
+              About The Author
+            </a>
           </div>
 
           <!-- col-2 -->
@@ -101,6 +114,29 @@
         </div>
       </div>
     </section>
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">The Author</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+          nisi atque ipsam, odit qui illo asperiores odio est dolorem obcaecati.
+        </div>
+      </div>
+    </div>
 
     <!-- pricing -->
 
@@ -609,7 +645,130 @@
         </div>
       </div>
     </section>
-    <p></p>
+
+    <!-- contact form -->
+    <!-- form-control, form-label, form-select, input-group, input-group-text -->
+    <section id="contact" class="p-5">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Contact Us</h2>
+          <p class="lead">
+            Do you have any inquiries? To reach us directly, please fill out the
+            form below
+          </p>
+        </div>
+
+        <!-- row -->
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6">
+            <form action="">
+              <!-- field-1 -->
+
+              <label for="email" class="form-label">Email Address:</label>
+              <div class="mb-4 input-group">
+                <!-- span-1 -->
+                <span class="input-group-text" id="email"
+                  ><i class="bi bi-envelope-fill"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="e.g adams@gmail.com"
+                />
+                <!-- tooltip -->
+                <!-- span-2 -->
+                <span
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  title="Please provide an email address we can respond to..."
+                >
+                  <span class="input-group-text" id="email"
+                    ><i class="bi bi-question-circle text-muted"></i
+                  ></span>
+                </span>
+              </div>
+
+              <!-- field-2 -->
+              <label for="name" class="form-label">Full Name:</label>
+              <div class="input-group mb-4">
+                <span class="input-group-text" id="email"
+                  ><i class="bi bi-person-fill"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder=""
+                />
+                <!-- tooltip -->
+                <!-- span-2 -->
+              </div>
+
+              <!-- fiel-3 -->
+              <label for="subject" class="form-label"
+                >What is the nature of your query?</label
+              >
+
+              <div class="input-group mb-4">
+                <span class="input-group-text" id="email"
+                  ><i class="bi bi-chat-right-dots-fill"></i
+                ></span>
+                <select class="form-select" id="subject">
+                  <option value="pricing" selected>
+                    Pricing / Discount query
+                  </option>
+                  <option value="content">Content query</option>
+                  <option value="other">Other query</option>
+                </select>
+              </div>
+
+              <!-- text-area --- field-4 -->
+
+              <div class="form-floating mb-4 mt-5">
+                <textarea
+                  class="form-control"
+                  id="query"
+                  rows="3"
+                  style="height: 140px"
+                ></textarea>
+                <label for="query">Your query...</label>
+              </div>
+
+              <!-- submit-button -->
+              <div class="mb-4 text-center">
+                <button type="submit" class="btn btn-dark btn-lg">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer id="contact" class="p-3 bg-dark position-relative text-center">
+      <div class="container-xxl">
+        <p class="lead text-light">The Drum Beat &copy; 2021</p>
+        <div class="my-2">
+          <span class="text-light">+233-0500025847</span>
+        </div>
+        <!-- <p class="text-light">About The Author</p> -->
+        <a href="" class="position-absolute bottom-0 end-0 p-3"
+          ><i class="bi bi-arrow-up-circle h1"></i
+        ></a>
+        <a href="" target="_blank"
+          ><i class="bi bi-twitter text-light mx-1"></i
+        ></a>
+        <a href="" target="_blank"
+          ><i class="bi bi-instagram text-light mx-1"></i
+        ></a>
+        <a href="" class=""><i class="bi bi-linkedin text-light mx-1"></i></a>
+      </div>
+    </footer>
+
     <!-- bootstrap js -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -654,6 +813,13 @@
           moreText.style.display = "inline";
         }
       }
+
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
     </script>
   </body>
 </html>
