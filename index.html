@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- bootstrap css cdn -->
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
-    />
+    /> -->
 
     <!-- bootstrap sass -->
-    <!-- <link href="css/main.min.css" rel="stylesheet" /> -->
+    <link href="css/main.min.css" rel="stylesheet" />
 
     <!-- font awesome -->
     <script
@@ -41,7 +41,7 @@
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-xxl">
         <span class="fw-bold text-secondary">
           <i class="bi bi-book-half h5"></i>
@@ -79,13 +79,13 @@
 
     <!-- showcase -->
 
-    <section id="intro" class="mb-4 mb-md-0">
+    <section id="intro" class="mb-4 mb-md-0 bg-light">
       <div class="container-lg">
         <!-- row -->
         <div class="row justify-content-center align-content-center">
           <!-- col-1 -->
           <div class="col-md-5 text-center text-md-start">
-            <h2 class="display-2">The Drum Beat Book</h2>
+            <h2 class="display-2">The Drum Beat</h2>
             <p class="lead my-4 text-muted">
               This work of art is not just about how the author insightfully
               reveals his talent in the space of writing but they are words that
@@ -95,14 +95,8 @@
             </p>
             <a class="btn btn-dark btn-lg" href="#pricing">Buy Now</a>
 
-            <!-- Tricker to offcanvas -->
-            <a
-              class="d-block mt-3"
-              data-bs-toggle="offcanvas"
-              href="#offcanvasExample"
-              role="button"
-              aria-controls="offcanvasExample"
-            >
+            <!-- Trigger to offcanvas -->
+            <a class="d-none d-md-block mt-3" role="button">
               About The Author
             </a>
           </div>
@@ -114,29 +108,6 @@
         </div>
       </div>
     </section>
-
-    <div
-      class="offcanvas offcanvas-start"
-      tabindex="-1"
-      id="offcanvasExample"
-      aria-labelledby="offcanvasExampleLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">The Author</h5>
-        <button
-          type="button"
-          class="btn-close text-reset"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-          nisi atque ipsam, odit qui illo asperiores odio est dolorem obcaecati.
-        </div>
-      </div>
-    </div>
 
     <!-- pricing -->
 
@@ -151,7 +122,7 @@
           <!-- COL-1 -->
           <div class="col-md-5">
             <div class="card border-2 border-primary">
-              <div class="card-header text-center text-primary">
+              <div class="card-header text-center text-primary bg-light">
                 Most Popular
               </div>
               <div class="card-body text-center">
@@ -180,7 +151,7 @@
           <!-- COL-2 -->
 
           <div class="col-md-5">
-            <div class="card border-2 border-primary">
+            <div class="card border-0">
               <div class="card-body text-center">
                 <h4 class="card-title">Kindle Version</h4>
                 <p class="lead card-subtitle">Download and read e-book</p>
@@ -274,11 +245,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
               Close
             </button>
             <button type="button" class="btn btn-primary">Submit</button>
@@ -288,7 +255,7 @@
     </div>
 
     <!-- topics at a glance -->
-    <section id="topics" class="p-5">
+    <section id="topics" class="p-5 bg-light">
       <div class="container-md">
         <div class="text-center">
           <h2>What To Expect</h2>
@@ -515,12 +482,11 @@
       </div>
     </section>
 
-    <!-- review -->
-    <!-- reviews list -->
+    <!-- reviews list------------------------------------------------------------ -->
     <section id="reviews" class="bg-info p-5">
       <div class="container-lg">
         <div class="text-center">
-          <h2><i class="bi bi-stars text-altdark"></i> Book Reviews</h2>
+          <h2><i class="bi bi-stars text-primary"></i> Book Reviews</h2>
           <p class="lead">What my Lorem ipsum dolor sit amet.</p>
         </div>
 
@@ -572,7 +538,7 @@
                 </p>
                 <!-- button to trigger read more/less -->
                 <button
-                  class="btn btn-primary btn-md mb-2"
+                  class="btn btn-primary btn-sm mb-2"
                   onclick="myFunctionA()"
                   id="myBtn-1"
                 >
@@ -624,7 +590,7 @@
 
                 <!-- button to trigger read more/less -->
                 <button
-                  class="btn btn-primary btn-md mb-2"
+                  class="btn btn-primary btn-sm mb-2"
                   onclick="myFunctionB()"
                   id="myBtn-2"
                 >
@@ -646,9 +612,8 @@
       </div>
     </section>
 
-    <!-- contact form -->
-    <!-- form-control, form-label, form-select, input-group, input-group-text -->
-    <section id="contact" class="p-5">
+    <!-- contact form ------------------------------------------- -->
+    <section id="contact" class="p-5 bg-light">
       <div class="container-lg">
         <div class="text-center">
           <h2>Contact Us</h2>
@@ -749,12 +714,10 @@
 
     <!-- footer -->
 
-    <footer id="contact" class="p-3 bg-dark position-relative text-center">
+    <footer id="contact" class="p-1 bg-dark position-relative text-center">
       <div class="container-xxl">
-        <p class="lead text-light">The Drum Beat &copy; 2021</p>
-        <div class="my-2">
-          <span class="text-light">+233-0500025847</span>
-        </div>
+        <p class="lead text-light mt-2">The Drum Beat &copy; 2021</p>
+        <p class="text-light">+233-0500025847</p>
         <!-- <p class="text-light">About The Author</p> -->
         <a href="" class="position-absolute bottom-0 end-0 p-3"
           ><i class="bi bi-arrow-up-circle h1"></i
