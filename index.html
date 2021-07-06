@@ -228,20 +228,24 @@
       aria-hidden="true"
     >
       <div class="modal-dialog">
-        <div class="modal-content">
-          <!-- modal header -->
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Order Details</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <!-- modal body -->
-          <div class="modal-body">
-            <form name="sales" method="POST" data-netlify="true">
+        <!-- https://stackoverflow.com/a/21593905/15235273 -->
+        <!-- form was inside model content hence not submiting
+the above link helped -->
+
+        <form name="sales" method="POST" data-netlify="true">
+          <div class="modal-content">
+            <!-- modal header -->
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Order Details</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- modal body -->
+            <div class="modal-body">
               <!-- field-1-->
               <div class="mb-3">
                 <label for="name" class="form-label">Full Name:</label>
@@ -293,15 +297,19 @@
                   placeholder=""
                 />
               </div>
-            </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-dark"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
-              Close
-            </button>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
 
