@@ -249,8 +249,8 @@
                   type="email"
                   class="form-control"
                   id="name"
+                  name="name"
                   placeholder=""
-                  required="required"
                 />
               </div>
 
@@ -261,6 +261,7 @@
                   type="email"
                   class="form-control"
                   id="quantity"
+                  name="quantity"
                   placeholder=""
                 />
               </div>
@@ -274,6 +275,7 @@
                   type="email"
                   class="form-control"
                   id="phone-number"
+                  name="phone-number"
                   placeholder="e.g +233-500025847"
                 />
               </div>
@@ -285,6 +287,7 @@
                   type="email"
                   class="form-control"
                   id="email"
+                  name="email"
                   placeholder="e.g adams@gmail.com"
                 />
               </div>
@@ -690,6 +693,7 @@
                   type="text"
                   class="form-control"
                   id="email"
+                  name="email"
                   placeholder=""
                 />
                 <!-- tooltip -->
@@ -715,6 +719,7 @@
                   type="text"
                   class="form-control"
                   id="name"
+                  name="name"
                   placeholder=""
                 />
                 <!-- tooltip -->
@@ -730,8 +735,8 @@
                 <span class="input-group-text" id="email"
                   ><i class="bi bi-chat-right-dots-fill"></i
                 ></span>
-                <select class="form-select" id="subject">
-                  <option value="pricing" selected>
+                <select name="" class="form-select" id="subject">
+                  <option value="pricing/discount" selected>
                     Pricing / Discount query
                   </option>
                   <option value="content">Content query</option>
@@ -743,6 +748,7 @@
 
               <div class="form-floating mb-4 mt-5">
                 <textarea
+                  name="message"
                   class="form-control"
                   id="query"
                   rows="3"
