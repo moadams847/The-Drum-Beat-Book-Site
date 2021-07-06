@@ -241,12 +241,12 @@
           </div>
           <!-- modal body -->
           <div class="modal-body">
-            <form action="">
+            <form name="sales" method="POST" data-netlify="true">
               <!-- field-1-->
               <div class="mb-3">
                 <label for="name" class="form-label">Full Name:</label>
                 <input
-                  type="email"
+                  type="text"
                   class="form-control"
                   id="name"
                   name="name"
@@ -258,7 +258,7 @@
               <div class="mb-3">
                 <label for="quantity" class="form-label">Quantity:</label>
                 <input
-                  type="email"
+                  type="number"
                   class="form-control"
                   id="quantity"
                   name="quantity"
@@ -272,7 +272,7 @@
                   >Phone Number:</label
                 >
                 <input
-                  type="email"
+                  type="tel"
                   class="form-control"
                   id="phone-number"
                   name="phone-number"
@@ -282,13 +282,15 @@
 
               <!-- filed-4 -->
               <div class="mb-3">
-                <label for="email" class="form-label">Email address:</label>
+                <label for="email-address" class="form-label"
+                  >Email address:</label
+                >
                 <input
                   type="email"
                   class="form-control"
-                  id="email"
-                  name="email"
-                  placeholder="e.g adams@gmail.com"
+                  id="email-address"
+                  name="email-address"
+                  placeholder=""
                 />
               </div>
             </form>
@@ -680,20 +682,22 @@
         <!-- row -->
         <div class="row justify-content-center my-5">
           <div class="col-lg-6">
-            <form action="">
+            <form name="contact" method="POST" data-netlify="true">
               <!-- field-1 -->
 
-              <label for="email" class="form-label">Email Address:</label>
+              <label for="email-address" class="form-label"
+                >Email Address:</label
+              >
               <div class="mb-4 input-group">
                 <!-- span-1 -->
                 <span class="input-group-text" id="email"
                   ><i class="bi bi-envelope-fill"></i
                 ></span>
                 <input
-                  type="text"
+                  type="email"
                   class="form-control"
-                  id="email"
-                  name="email"
+                  id="email-address"
+                  name="email-address"
                   placeholder=""
                 />
                 <!-- tooltip -->
@@ -722,8 +726,6 @@
                   name="name"
                   placeholder=""
                 />
-                <!-- tooltip -->
-                <!-- span-2 -->
               </div>
 
               <!-- fiel-3 -->
@@ -735,7 +737,7 @@
                 <span class="input-group-text" id="email"
                   ><i class="bi bi-chat-right-dots-fill"></i
                 ></span>
-                <select name="" class="form-select" id="subject">
+                <select name="query topic" class="form-select" id="subject">
                   <option value="pricing/discount" selected>
                     Pricing / Discount query
                   </option>
