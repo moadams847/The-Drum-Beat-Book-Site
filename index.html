@@ -230,7 +230,7 @@
       <div class="modal-dialog">
         <!-- https://stackoverflow.com/a/21593905/15235273 -->
         <!-- form was inside model content hence not submiting
-the above link helped -->
+                  the above link helped -->
 
         <form name="sales" method="POST" data-netlify="true">
           <div class="modal-content">
@@ -286,14 +286,24 @@ the above link helped -->
 
               <!-- filed-4 -->
               <div class="mb-3">
-                <label for="email-address" class="form-label"
-                  >Email address:</label
-                >
+                <label for="email-address" class="form-label">Email:</label>
                 <input
                   type="email"
                   class="form-control"
                   id="email-address"
-                  name="email-address"
+                  name="email-address "
+                  placeholder=""
+                />
+              </div>
+
+              <!-- filed-5 -->
+              <div class="mb-3">
+                <label for="location" class="form-label">Address:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="location"
+                  name="location"
                   placeholder=""
                 />
               </div>
@@ -554,14 +564,14 @@ the above link helped -->
           <p class="lead">What my Lorem ipsum dolor sit amet.</p>
         </div>
 
-        <div class="row justify-content-center my-5">
+        <div class="row justify-content-center my-5 text-center text-lg-start">
           <!-- for very small screens its going to be full width -->
           <div class="col-lg-8">
             <div class="list-group">
               <!-- list-1 -->
               <div class="list-group-item py-3">
                 <h5 class="mb-1">Lorem ipsum dolor sit amet</h5>
-                <p class="mb-2 lh-lg">
+                <p class="mb-2">
                   If you have ever felt the need to motivate yourself, encourage
                   yourself or perhaps sharpen your self-esteem, there is only
                   <span id="dots-1">...</span>
@@ -621,7 +631,7 @@ the above link helped -->
               <!-- list-2 -->
               <div class="list-group-item py-3">
                 <h5 class="mb-1">Lorem ipsum dolor sit amet</h5>
-                <p class="mb-2 lh-lg">
+                <p class="mb-2">
                   It is heartwarming to observe that the blooming of new writers
                   has gradually taken shape. These include works such as
                   <span id="dots-2">...</span>
@@ -781,10 +791,12 @@ the above link helped -->
 
     <!-- footer -->
 
-    <footer id="contact" class="p-1 bg-dark position-relative text-center">
+    <footer id="contact" class="p-2 lh-1 bg-dark position-relative text-center">
       <div class="container-xxl">
-        <p class="text-light mt-2">The Drum Beat &copy; 2021</p>
-        <p class="text-light">+233-0246788949</p>
+        <div class="mt-2">
+          <p class="text-white">The Drum Beat &copy; 2021</p>
+          <p class="text-white">+233-0246788949</p>
+        </div>
 
         <!-- <p class="text-light">About The Author</p> -->
         <div class="mb-2">
