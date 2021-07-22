@@ -8,7 +8,7 @@ This project is for a friend who was looking for a simple solution to sell and p
 
 ## Screenshot
 
-[![The drum beat book site](img/book-l.PNG "The Drum beat book site")](https://drive.google.com/file/d/1cusmjVPrs-XBVQdOcRlb1xn_Zs3oNaKR/view?usp=sharing)
+[![The Brum Beat](img/book-l.PNG "The Drum Beat Book Store")](https://drive.google.com/file/d/1cusmjVPrs-XBVQdOcRlb1xn_Zs3oNaKR/view?usp=sharing)
 
 ## URL
 
