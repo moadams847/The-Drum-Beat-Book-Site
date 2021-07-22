@@ -16,7 +16,7 @@ This project is for a friend who was looking for a simple solution to sell and p
 
 ## Installation
 
-1. Clone Repo
+Clone Repo
 
 ## Tech/framework used
 
