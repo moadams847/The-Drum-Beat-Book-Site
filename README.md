@@ -12,7 +12,7 @@ This project is for a friend who was looking for a simple solution to sell and p
 
 ## URL
 
-The drum beat book Store [The Drum Beat Book](https://master--wizardly-swartz-760938.netlify.app/).
+The drum beat book Store [link](https://master--wizardly-swartz-760938.netlify.app/).
 
 ## Installation
 
