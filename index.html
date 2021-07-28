@@ -575,7 +575,11 @@
                   >
                 </p>
                 <!-- button to trigger read more/less -->
-                <button class="btn btn-primary btn-sm mb-2" id="myBtn-1">
+                <button
+                  class="btn btn-primary btn-sm mb-2"
+                  onclick="myFunctionA()"
+                  id="myBtn-1"
+                >
                   Read more
                 </button>
 
@@ -623,7 +627,11 @@
                 </p>
 
                 <!-- button to trigger read more/less -->
-                <button class="btn btn-primary btn-sm mb-2" id="myBtn-2">
+                <button
+                  class="btn btn-primary btn-sm mb-2"
+                  onclick="myFunctionB()"
+                  id="myBtn-2"
+                >
                   Read more
                 </button>
 
@@ -778,9 +786,9 @@
           ></a>
 
           <!-- 4 linkedin -->
-          <!-- <a class="mx-1" href="" class=""
+          <a class="mx-1" href="" class=""
             ><i class="bi bi-linkedin text-white"></i
-          ></a> -->
+          ></a>
 
           <!-- 5 youtube -->
           <a
@@ -818,6 +826,45 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="index.js"></script>
+    <script>
+      function myFunctionA() {
+        var dots = document.getElementById("dots-1");
+        var moreText = document.getElementById("more-1");
+        var btnText = document.getElementById("myBtn-1");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+
+      function myFunctionB() {
+        var dots = document.getElementById("dots-2");
+        var moreText = document.getElementById("more-2");
+        var btnText = document.getElementById("myBtn-2");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
   </body>
 </html>
