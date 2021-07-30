@@ -202,13 +202,13 @@
               <div class="card-body text-center">
                 <h4 class="card-title">Kindle Version</h4>
                 <p class="lead card-subtitle">Download and read e-book</p>
-                <p class="display-4 my-4 text-primary fw-bold">$5</p>
+                <p class="display-4 my-4 text-primary fw-bold">$7</p>
                 <p class="card-text mx-5 text-muted d-none d-lg-block">
                   You cannot deny yourself the opportunity to read this master
                   piece
                 </p>
                 <a
-                  href="#"
+                  href="https://www.amazon.com/DRUM-BEAT-POETRY-COLLECTION-ebook/dp/B098YLLTBR/ref=mp_s_a_1_1?dchild=1&keywords=abraham+anab&qid=1627387749&s=books&sr=1-1"
                   class="btn btn-outline-primary btn-lg mt-3"
                   target="_blank"
                 >
@@ -576,9 +576,8 @@
                 </p>
                 <!-- button to trigger read more/less -->
                 <button
-                  class="btn btn-primary btn-sm mb-2"
-                  onclick="myFunctionA()"
-                  id="myBtn-1"
+                  class="btn btnJs myBtn-1 btn-primary btn-sm mb-2"
+                  id="btnId-1"
                 >
                   Read more
                 </button>
@@ -628,9 +627,8 @@
 
                 <!-- button to trigger read more/less -->
                 <button
-                  class="btn btn-primary btn-sm mb-2"
-                  onclick="myFunctionB()"
-                  id="myBtn-2"
+                  class="btn btnJs myBtn-2 btn-primary btn-sm mb-2"
+                  id="btnId-2"
                 >
                   Read more
                 </button>
@@ -826,45 +824,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script>
-      function myFunctionA() {
-        var dots = document.getElementById("dots-1");
-        var moreText = document.getElementById("more-1");
-        var btnText = document.getElementById("myBtn-1");
-
-        if (dots.style.display === "none") {
-          dots.style.display = "inline";
-          btnText.innerHTML = "Read more";
-          moreText.style.display = "none";
-        } else {
-          dots.style.display = "none";
-          btnText.innerHTML = "Read less";
-          moreText.style.display = "inline";
-        }
-      }
-
-      function myFunctionB() {
-        var dots = document.getElementById("dots-2");
-        var moreText = document.getElementById("more-2");
-        var btnText = document.getElementById("myBtn-2");
-
-        if (dots.style.display === "none") {
-          dots.style.display = "inline";
-          btnText.innerHTML = "Read more";
-          moreText.style.display = "none";
-        } else {
-          dots.style.display = "none";
-          btnText.innerHTML = "Read less";
-          moreText.style.display = "inline";
-        }
-      }
-
-      var tooltipTriggerList = [].slice.call(
-        document.querySelectorAll('[data-bs-toggle="tooltip"]')
-      );
-      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl);
-      });
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
