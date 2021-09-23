@@ -24,7 +24,8 @@ Clone Repo
 2. CSS3
 3. Bootstrap 5
 4. SASS
-5. Netlify
+5. Netlify + Netlify Forms
+6. JavaScript/jQuuery
 
 ## Contributing
 
