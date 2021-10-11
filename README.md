@@ -16,7 +16,13 @@ This project is for a friend who was looking for a simple solution to sell and p
 
 ## Installation
 
-Clone Repo
+1. Clone Repo
+2. cd to the directory where cloned folder is locacted
+3. run: npm install in your shell
+
+```bash
+npm install
+```
 
 ## Tech/framework used
 
